@@ -2,13 +2,15 @@ def HDL_input():
     print("Enter HDL Value: ")
     ret = int(input())
     return ret
+
 def HDL_check(x):
     if x >= 60:
         return "Normal"
-    elif x >= 40 and x < 60:
+    elif x >= 40 and x < 60: #40 <= x < 60 also works
         return "Borderline Low"
     else:
         return "Low"
+
 def HDL_out(msg):
     print(msg, "\n")
 
