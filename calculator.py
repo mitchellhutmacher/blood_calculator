@@ -34,5 +34,5 @@ def interface():
             return
         elif choice == "1":
             HDL_driver()
-
-interface()
+if __name__ == "__main__": #Makes sure that this only runs if the calculator code is run, not run on import
+    interface()
